@@ -4,6 +4,7 @@ Create on: 2018-5-3
 @Author  : sunhailin-Leo
 @File    : spider.py
 """
+import sys
 import json
 import time
 import requests
@@ -38,13 +39,18 @@ def parse_page_table(code):
 
 
 def spider():
-    res = parse_page()
-    parse_page_table(res)
+    while True:
+        res = parse_page()
+        parse_page_table(res)
+        time.sleep(2)
 
 
 if __name__ == '__main__':
     print("Start time: {}".format(time.time()))
-    while True:
+    try:
         spider()
+    except Exception as err:
+        print(err)
         time.sleep(2)
+        spider()
 
