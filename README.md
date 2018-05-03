@@ -14,6 +14,11 @@
 
 ---
 
+* 爬虫代码运行: python3 spider.py (自己手动创建一个data.txt)
+* flask启动: python3 backend.py
+
+---
+
 * 结果图(Drawed by pyecharts)：
 
 ![Result](https://s1.ax1x.com/2018/05/03/CtGzZj.png)
