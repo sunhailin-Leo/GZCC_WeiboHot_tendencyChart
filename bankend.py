@@ -22,7 +22,7 @@ def render():
                            chart_id=_overlap.chart_id,
                            host=REMOTE_HOST,
                            my_width="100%",
-                           my_height=600,
+                           my_height=800,
                            my_option=TRANSLATOR.translate(_overlap.options).as_snippet(),
                            script_list=_overlap.get_js_dependencies())
 

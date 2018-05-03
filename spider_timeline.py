@@ -30,7 +30,7 @@ def read_file():
 
 
 def draw_line(attr_list, value_list, rank_list):
-    overlap = Overlap(page_title="Made By Leo")
+    overlap = Overlap()
 
     # 微博热搜量
     line = Line(title="广州商学院 外卖(微博热搜量)",

@@ -11,10 +11,13 @@ import requests
 from lxml import etree
 
 Url = "http://s.weibo.com/top/summary?Refer=top_hot&topnav=1&wvr=6"
+Header = \
+    {"User-Agent":
+     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"}
 
 
 def parse_page():
-    resp = requests.get(Url, headers={"User-Agent": ""})
+    resp = requests.get(Url, headers=Header)
     txt_content = resp.content.decode("UTF-8")
     for line in txt_content.splitlines():
         if line.startswith(
