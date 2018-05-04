@@ -41,6 +41,7 @@ def draw_line(attr_list, value_list, rank_list):
                 title_pos="center",
                 subtitle_text_size=14,
                 subtitle_color="#A8A8A8")
+
     line.add("微博热搜量", attr_list, value_list,
              is_smooth=True,
              is_datazoom_show=True,
